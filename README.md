@@ -1,18 +1,18 @@
 # What are some differences between interfaces and types in TypeScript?
 **Types** and **interfaces** are both used to define the shape of objects in TypeScript, but they have some key differences:
 ## Declaration Merging:
-#### Interfaces support declaration merging, where multiple interfaces with the same name are merged into one. Types do not support this. 
+Interfaces support declaration merging, where multiple interfaces with the same name are merged into one. Types do not support this. 
 ## Flexibility:
-#### Types are more flexible and can define aliases for primitive types, unions, and intersections. Interfaces are primarily used to describe the structure of objects.
+Types are more flexible and can define aliases for primitive types, unions, and intersections. Interfaces are primarily used to describe the structure of objects.
 ## Extensibility:
-#### Interfaces can extend other interfaces using the extends keyword. Types can achieve a similar result using intersection types (&).
+Interfaces can extend other interfaces using the extends keyword. Types can achieve a similar result using intersection types (&).
 ## Error Messages:
-#### Interfaces can sometimes provide more descriptive error messages compared to types, especially when dealing with complex object structures.
+Interfaces can sometimes provide more descriptive error messages compared to types, especially when dealing with complex object structures.
 ## Performance:
-#### Interfaces may offer slightly better performance in the TypeScript compiler because they only need to maintain references to their names, while types may need to create new object types each time they're used. 
+Interfaces may offer slightly better performance in the TypeScript compiler because they only need to maintain references to their names, while types may need to create new object types each time they're used. 
 ## Use Cases:
-#### Types are often favored for function types, tuples, and when working with more complex type manipulations. Interfaces are commonly used when defining the structure of objects, especially when working with classes.
-#### In practice, the choice between types and interfaces often comes down to personal preference and the specific needs of the project. For simple object structures, either can be used effectively. However, for more complex scenarios, understanding the nuances of each can help in making the best decision.
+Types are often favored for function types, tuples, and when working with more complex type manipulations. Interfaces are commonly used when defining the structure of objects, especially when working with classes.
+In practice, the choice between types and interfaces often comes down to personal preference and the specific needs of the project. For simple object structures, either can be used effectively. However, for more complex scenarios, understanding the nuances of each can help in making the best decision.
 
 &nbsp;
 
